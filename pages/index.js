@@ -35,7 +35,7 @@ export default function Home({allPostsData}) {
         </script>
       </Head>
       <Header home={true} />
-      <main style={{direction:"rtl"}}>
+      <main className="h-full" style={{direction:"rtl"}}>
         <section className="pb-12 font-Almarai dark:bg-blackTheme">
           <div className="container mx-auto px-8 md:px-24 lg:px-44 xl:px-64">
             {
