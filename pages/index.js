@@ -18,25 +18,18 @@ export default function Home({allPostsData}) {
         "/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://khalil-meziane.vercel.app"/>
-        <meta property="og:title" content="khalil M. Blog"/>
+        <meta property="og:title" content="khalil M."/>
         <meta property="og:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming"/>
-        <meta property="og:image" content="./ProgrammingIllustration.png"/>
+        <meta property="og:image" content="https://khalil-meziane.vercel.app/thumbnails/ProgrammingIllustration.png"/>
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://khalil-meziane.vercel.app/"/>
-        <meta property="twitter:title" content="khalil M. Blog"/>
+        <meta property="twitter:title" content="khalil M."/>
         <meta property="twitter:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming "/>
-        <meta property="twitter:image" content="./ProgrammingIllustration.png"/>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKZ5665S99"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-            gtag('config', 'G-YKZ5665S99');
-        </script>
+        <meta property="twitter:image" content="https://khalil-meziane.vercel.app/thumbnails/ProgrammingIllustration.png"/>
       </Head>
       <Header home={true} />
       <main className="h-full" style={{direction:"rtl"}}>
-        <section className="pb-12 font-Almarai dark:bg-blackTheme">
+        <section className="pb-12 font-Almarai">
           <div className="container mx-auto px-8 md:px-24 lg:px-44 xl:px-64">
             {
               allPostsData.map(({id, date, title,description})=>{

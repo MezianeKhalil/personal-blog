@@ -4,8 +4,12 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import {useEffect,useState} from 'react'
 export default function Post({ postData }) {
-  console.log(postData.keywords)
+  const [pageLink,setPageLink] = useState(undefined)
+  useEffect(()=>{
+    setPageLink(window.location.href)
+  },[])
     return(
       <>
         <Head>
@@ -17,24 +21,17 @@ export default function Post({ postData }) {
           <meta name="description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming
           "/>
           <meta property="og:type" content="blog"/>
-          <meta property="og:url" content="_________________"/>
+          <meta property="og:url" content={pageLink} />
           <meta property="og:title" content={postData.title}/>
           <meta property="og:description" content={postData.description}/>
           <meta property="og:image" content={postData.thumbnail}/>
-          <meta property="twitter:url" content="________________"/>
+          <meta property="twitter:url" content={pageLink} />
           <meta property="twitter:title" content={postData.title}/>
           <meta property="twitter:description" content={postData.description}/>
           <meta property="twitter:image" content={postData.thumbnail}/>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKZ5665S99"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-            gtag('config', 'G-YKZ5665S99');
-          </script>
         </Head>
         <Header/>
-        <main className="font-Almarai relative dark:bg-blackTheme" style={{direction:"rtl"}}>
+        <main className="font-Almarai relative" style={{direction:"rtl"}}>
           <div className="container mx-auto px-8 md:px-24 lg:px-36 xl:px-56">
             <article>
               <header className="pb-6">

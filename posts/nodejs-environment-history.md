@@ -3,7 +3,7 @@ title: 'تاريخ موجز لتطور بيئة nodejs'
 date: '2020-12-11'
 description: 'هذا مجرد نص عشوائي لس له اي فائدة'
 keywords: 'nodejs javascript express'
-thumbnail: './thumbnails/....'
+thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/nodejs.png'
 ---
 
 يمكن اعتبار **لغة تنسيق صفحات الويب**، المعروفة اختصارا ب **CSS**، من أبسط اللغات في مجال تطوير الويب وأسهلها على المبتدئين.
