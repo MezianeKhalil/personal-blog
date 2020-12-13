@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 export default function Home({allPostsData}) {
   // console.log(allPostsData)
   return (
-    <>
+    <div className="dark:bg-blackTheme">
       <Head>
         <title>Khalil M.</title>
         <meta name="author" content="khalil meziane" />
@@ -63,7 +63,7 @@ export default function Home({allPostsData}) {
         </section>
       </main>
       <Footer home={true}/>
-    </>
+    </div>
   )
 }
 export async function getStaticProps() {
