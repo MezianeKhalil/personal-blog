@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily:{
@@ -8,8 +8,12 @@ module.exports = {
         'Poppins':['Poppins', 'sans-serif']
       },
       colors: {
-        customBlue:'#0070f3'
+        customBlue:'#0070f3',
+        blackTheme:'#1f1f1F',
       },
+      backgroundColor: theme =>({
+        ...theme('colors')
+      }),
       lineHeight: {
         '11': '2.5rem',
         '12': '3rem',

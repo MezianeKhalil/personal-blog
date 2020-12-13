@@ -1,65 +1,69 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
+import Link from 'next/link'
+import {getSortedPostsData } from '../lib/posts'
+import Date from '../components/date'
+import Header from '../components/header'
+import Footer from '../components/footer'
+export default function Home({allPostsData}) {
+  // console.log(allPostsData)
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Khalil M.</title>
+        <meta name="author" content="khalil meziane" />
+        <meta name="theme-color" content="#1f1f1F" />
+        <meta name="keywords" content="blog, web development, front end" />
+        <meta name="title" content="khalil M. Blog"/>
+        <meta name="description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming
+        "/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="_________________"/>
+        <meta property="og:title" content="khalil M. Blog"/>
+        <meta property="og:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming"/>
+        <meta property="og:image" content="./ProgrammingIllustration.png"/>
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="________________"/>
+        <meta property="twitter:title" content="khalil M. Blog"/>
+        <meta property="twitter:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming "/>
+        <meta property="twitter:image" content="./ProgrammingIllustration.png"/>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <Header home={true} />
+      <main style={{direction:"rtl"}}>
+        <section className="pb-12 font-Almarai dark:bg-blackTheme">
+          <div className="container mx-auto px-8 md:px-24 lg:px-44 xl:px-64">
+            {
+              allPostsData.map(({id, date, title,description})=>{
+                return(
+                  <article className="px-3 pb-3" key={id}>
+                    <header>
+                      <small>
+                        <Date dateString={date} />
+                      </small>
+                      <br/>
+                      <Link href="/[id]" as={`/${id}`}>
+                        <a className=" inline-block text-2xl lg:text-3xl  pb-2 font-semibold hover:text-customBlue dark:hover:text-customBlue transition duration-300 ease text-gray-900 dark:text-white">{title}</a>
+                      </Link>
+                      <p className="text-gray-700 dark:text-gray-200 pb-4 lg:text-lg">{description}</p>
+                      <Link href="/[id]" as={`/${id}`}>
+                      <a className="font-bold text-gray-900 dark:text-white underline  hover:text-customBlue dark:hover:text-customBlue transition duration-300 ease">إقرأ المزيد</a>
+                      </Link>
+                    </header>
+                  </article>
+                )
+              })
+            }
+          </div>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <Footer home={true}/>
+    </>
   )
+}
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
