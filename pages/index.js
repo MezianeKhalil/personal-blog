@@ -17,15 +17,22 @@ export default function Home({allPostsData}) {
         <meta name="description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming
         "/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="_________________"/>
+        <meta property="og:url" content="https://khalil-meziane.vercel.app"/>
         <meta property="og:title" content="khalil M. Blog"/>
         <meta property="og:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming"/>
         <meta property="og:image" content="./ProgrammingIllustration.png"/>
         <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:url" content="________________"/>
+        <meta property="twitter:url" content="https://khalil-meziane.vercel.app/"/>
         <meta property="twitter:title" content="khalil M. Blog"/>
         <meta property="twitter:description" content="Hi, I'm khalil meziane i am web developer, I am writing various articles on programming "/>
         <meta property="twitter:image" content="./ProgrammingIllustration.png"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKZ5665S99"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+            gtag('config', 'G-YKZ5665S99');
+        </script>
       </Head>
       <Header home={true} />
       <main style={{direction:"rtl"}}>

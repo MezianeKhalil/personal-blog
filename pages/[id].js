@@ -25,6 +25,13 @@ export default function Post({ postData }) {
           <meta property="twitter:title" content={postData.title}/>
           <meta property="twitter:description" content={postData.description}/>
           <meta property="twitter:image" content={postData.thumbnail}/>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKZ5665S99"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+            gtag('config', 'G-YKZ5665S99');
+          </script>
         </Head>
         <Header/>
         <main className="font-Almarai relative dark:bg-blackTheme" style={{direction:"rtl"}}>
