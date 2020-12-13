@@ -31,7 +31,7 @@ export default function Post({ postData }) {
           <meta property="twitter:image" content={postData.thumbnail}/>
         </Head>
         <Header/>
-        <main className="font-Almarai relative" style={{direction:"rtl"}}>
+        <main className="font-Almarai" style={{direction:"rtl"}}>
           <div className="container mx-auto px-8 md:px-24 lg:px-36 xl:px-56">
             <article>
               <header className="pb-6">
