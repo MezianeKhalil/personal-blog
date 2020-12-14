@@ -1,7 +1,7 @@
 ---
-title: 'نظام التحكم في الإصدار (vcs)'
+title: 'نظم التحكم في الإصدار (vcs)'
 date: '2020-12-14'
-description: 'هذا مجرد نص عشوائي لس له اي فائدة'
+description: 'ما هو نظام التحكم في الإصدار ولماذا يجب أن تهتم بها بصفتك كمبرمج'
 keywords: 'git github vcs'
 thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/vcs.png'
 ---
@@ -28,7 +28,8 @@ thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/vcs.png'
 تقوم بإجراء التغييرات على المستودع الرئيسي.
 يقوم الآخرون بتحديث نسخة العمل الخاصة بهم لرؤية التغييرات
 
-![centralized version control system diagram](/images/cvcs.png "centralized version control system diagram")
+<img src="/images/cv-cs.png" alt="centralized version control system diagram" width="1187" height="669"/>
+
 مزايا:
 يمكن للمطورين التعاون. -
 يمكنهم أن يكونوا على دراية بالعمل الذي يقوم به الآخرون. -
@@ -46,7 +47,8 @@ thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/vcs.png'
 يسحب(pull) الآخرون تغييراتك في مستودعاتهم المحلية.
 يقومون بتحديث نسخة العمل الخاصة بهم لرؤية التغييرات.
 
-![centralized version control system diagram](/images/dvcs.png "centralized version control system diagram")
+<img src="/images/dvcs.png" alt="distributed version control system diagram" width="1187" height="669"/>
+
 مزايا:
 يجعل التعاون أسهل. -
 يقلل من مشاكل تعطل خادم. -
