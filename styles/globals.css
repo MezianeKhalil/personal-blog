@@ -12,4 +12,7 @@ h3{
 img{
     @apply my-4 bg-white
 }
+ul li{
+    list-style: circle
+}
 @tailwind utilities;
