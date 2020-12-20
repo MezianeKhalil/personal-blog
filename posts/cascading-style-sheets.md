@@ -28,8 +28,9 @@ thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/css.png'
 4- Important declarations in author style sheets
 
 5- Important declarations in user style sheets
+</br>
 
-<h3>The is What sheets style agent User -1 </h3>
+### The is What sheets style agent User -1
 
 ورقة وكيل المستخدم هي ورقة الأنماط المدمجة في كل عناصر HTML المختلفة نمط من قبل المستخدم أو مصمم الصفحة. على سبيل المثال الارتباطات غير المرخصة ما تكون زرقاء ومسطرة. ورقة المستخدم هي حددها المستخدم. المتصفحات أنماط المستخدم يمكن أن تكون مفيدة للغاية خاصة للمستخدمين الذين يعانون  من أحد أنواع معينة من الإعاقات. 
 
