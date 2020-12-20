@@ -19,18 +19,16 @@ thumbnail: 'https://khalil-meziane.vercel.app/thumbnails/css.png'
 ## A- Importance
 تعتمد أهمية إعلان css على المكان المحدد. سيتم تطبيق الإعلانات المتضاربة بالترتيب التي:
 
-1- User agent style sheets
+- User agent style sheets
 
-2- Normal declarations in user style sheets
+- Normal declarations in user style sheets
 
-3- Normal declarations in author style sheets
+- Normal declarations in author style sheets
 
-4- Important declarations in author style sheets
+- Important declarations in author style sheets
 
-5- Important declarations in user style sheets
-</br>
-
-### The is What sheets style agent User -1
+- Important declarations in user style sheets
+### what is the user style sheet agent -1
 
 ورقة وكيل المستخدم هي ورقة الأنماط المدمجة في كل عناصر HTML المختلفة نمط من قبل المستخدم أو مصمم الصفحة. على سبيل المثال الارتباطات غير المرخصة ما تكون زرقاء ومسطرة. ورقة المستخدم هي حددها المستخدم. المتصفحات أنماط المستخدم يمكن أن تكون مفيدة للغاية خاصة للمستخدمين الذين يعانون  من أحد أنواع معينة من الإعاقات. 
 

@@ -4,10 +4,10 @@ p,ul li{
     @apply text-gray-800 dark:text-gray-100 mb-2 lg:mb-4 leading-11 md:leading-11 lg:leading-12 font-medium text-lg lg:text-xl
 }
 h2{
-    @apply text-gray-900 dark:text-white  font-semibold text-xl lg:text-2xl py-4
+    @apply text-gray-900 dark:text-white  font-semibold text-xl lg:text-2xl py-4 text-customBlue
 }
 h3{
-    @apply text-gray-900 dark:text-white  font-semibold text-xl lg:text-xl py-3
+    @apply text-gray-900 dark:text-white  font-semibold text-xl lg:text-xl py-3 text-customBlue
 }
 img{
     @apply my-4 bg-white

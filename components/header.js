@@ -5,7 +5,7 @@ export default function header({home}) {
             <header className={`${home?'py-10 md:py-14 lg:py-16':'py-6 md:py-12 lg:py-14'} font-Poppins  dark:bg-blackTheme`}>
                 <div className="container mx-auto px-8 md:px-24 lg:px-44 xl:px-64">
                     <Link href="/">
-                        <a className="capitalize text-gray-900 dark:text-white text-5xl text-center cursor-default">khalil m.</a>
+                        <a className="capitalize text-gray-900 dark:text-white text-5xl text-center cursor-pointer block">khalil m.</a>
                     </Link>
                     <ul className="flex justify-center">
                         <li className='pl-1'>
